@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" value="Logout"  id="logoutbtn">
+</body>
+<script>
+    var logout = document.getElementById("logoutbtn");
+    var clear = false
+    logout.addEventListener("click",function(){
+       localStorage.clear();
+       clear = true;
+       if(clear = true){
+        location.href ="/login.html";
+
+       }
+       
+       
+    });
+
+</script>
+</html>
